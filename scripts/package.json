@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "name": "ugc-scripts",
+  "version": "0.1.0",
+  "author": "didinele",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "@types/node-fetch": "^2.5.12"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
