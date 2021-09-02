@@ -10,7 +10,7 @@ on:
 
 jobs:
   checks:
-    name: Quality Check
+    name: Update List
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

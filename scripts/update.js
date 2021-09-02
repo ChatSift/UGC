@@ -18,7 +18,7 @@ const IGNORED = ['anime', 'gambling'];
 const urlsFromFile = (content, category) => content
   .split('\n')
   .filter(line => line.length)
-  .map(line => ({ url: line, category: CATEGORIES[category] }));
+  .map(line => ({ url: line.replace(/ +/g, ''), category: CATEGORIES[category] }));
 
 void (async () => {
   const urls = [];
@@ -55,7 +55,7 @@ void (async () => {
   const parsed = await res.json();
 
   if (!res.ok) {
-    console.error('Non-ok status code', res.status, parsed);
+    console.error('Non-ok status code', parsed);
     process.exit(1);
   }
 })();
